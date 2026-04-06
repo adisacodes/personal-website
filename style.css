@@ -1,0 +1,147 @@
+body {
+    background-color: lavenderblush;
+    color: #3f3a57;
+    font-family :Georgia,  serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: plum;
+    color: white;
+    padding: 60px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+}
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav {
+    background-color: thistle;
+    padding: 14px 24px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    background-color: mediumvioletred;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: plum;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    border-bottom: 1px solid thistle;
+}
+section h2 {
+    font-size: 1.8rem;
+    color: mediumvioletred;
+    margin-bottom: 16px;
+}
+section h3 {
+   font-size: 1.2rem;
+   color: mediumvioletred;
+   margin-top: 24px;
+   margin-bottom: 10px;
+}
+section p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+ul {
+    padding: 24px;
+    margin-top: 8px;
+}
+ul li {
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.project-card {
+    background-color: whitesmoke;
+    border: 1px solid thistle;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 22px rgba(111, 55, 94, 0.08);
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: mediumvioletred;
+}
+
+.project-card p {
+    margin-bottom: 0;
+    font-size: x-small;
+    color: darkslategray;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    margin: 12px ;
+    object-fit: cover;
+}
+
+
+.project-card a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background-color: mediumvioletred;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    background-color: plum;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 6px 6px;
+    }
+
+    .project-card {
+        padding: 16px;
+    }
+}
+
